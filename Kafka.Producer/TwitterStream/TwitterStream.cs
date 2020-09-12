@@ -14,7 +14,10 @@ namespace Kafka.Producer.TwitterStream
         {
             _twitterConfig = twitterConfig;
 
-            var config = new ProducerConfig { BootstrapServers = "localhost:9092" };
+            var config = new ProducerConfig { 
+                BootstrapServers = "localhost:9092"
+            };
+
 
             //safer producer
             config.Acks = Acks.All;

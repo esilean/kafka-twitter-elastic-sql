@@ -25,7 +25,7 @@ namespace Kafka.Producer
             };
 
             var twitterStream = new TwitterStream.TwitterStream(twitterConfig);
-            twitterStream.Execute(new string[] { "react" });
+            twitterStream.Execute(new string[] { "netflix" });
 
             Console.ReadKey();
         }
